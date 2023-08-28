@@ -9,18 +9,15 @@ def is_balanced(expression):
         if condition:
             if c in '{[(':
                 l.append(c)
-            elif c in '}])':
-                if len(l) == 0:
-                    condition = False
-                else:
-                    last = l.pop()
-                    match c:
-                        case '}':
-                            condition = '{' == last
-                        case ']':
-                            condition = '[' == last
-                        case ')':
-                            condition = '(' == last
+            elif c in '}])' and len(l) > 0:
+                last = l.pop()
+                match c:
+                    case '}':
+                        condition = '{' == last
+                    case ']':
+                        condition = '[' == last
+                    case ')':
+                        condition = '(' == last
             else:
                 condition = False
     
