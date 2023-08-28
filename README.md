@@ -1,6 +1,6 @@
 # Data Structures and Algorithms Assessment - Phase 3 Week 2
 
-In the same files or different scripts code out the following functions
+In the same files or different scripts code out the following functions:
 
 ## Stacks
 
